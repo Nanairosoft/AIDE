@@ -3,5 +3,14 @@
 
     <string name="app_name">Nanairotter</string>
     <string name="hello_world">Hello world!</string>
+	
+	<string name="drawer_open">Drawer Open</string>
+	<string name="drawer_close">Drawer Close</string>
+	
+	<string name="action_settings">Settings</string>
+	
+	<string name="twitter_consumer_key">yOKrAflrYyAVyUTHssZwwZeNS</string>
+    <string name="twitter_consumer_secret">CJ0KSobVCKqZ8GE9UtOoWHZxFapzXhCMd6pp1M0JJmYf2pDDfG</string>
+	<string name="twitter_callback_url">gabu://twitter</string>
 
 </resources>

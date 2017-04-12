@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.nanairosoft.android.nanairotter" >
+    package="com.nanairosoft.android.nanairotter"
+	android:versionCode="1"
+	android:versionName="1.00" >
 
+	<uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+	<uses-permission android:name="android.permission.INTERNET" />
+	
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme"
-		android:resizeableActivity = "true">
+		android:supportsRtl="true"
+        android:theme="@style/MyTheme" >
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
@@ -17,6 +25,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+		<activity
+			android:name=".LoginActivity"
+			android:launchMode="singleTask" >
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+
+				<data
+					android:host="twitter"
+					android:scheme="gabu" />
+			</intent-filter>
+		</activity>
     </application>
 
 </manifest>
