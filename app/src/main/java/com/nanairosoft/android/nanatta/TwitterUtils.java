@@ -1,4 +1,4 @@
-package com.nanairosoft.android.nanairotter;
+package com.nanairosoft.android.nanatta;
 
 import twitter4j.Twitter;
 import twitter4j.TwitterFactory;

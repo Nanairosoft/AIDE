@@ -5,7 +5,7 @@ android {
     buildToolsVersion "21.1.0"
 
     defaultConfig {
-        applicationId "com.nanairosoft.android.nanairotter"
+        applicationId "com.nanairosoft.android.nanatta"
         minSdkVersion 14
         targetSdkVersion 21
         versionCode 1

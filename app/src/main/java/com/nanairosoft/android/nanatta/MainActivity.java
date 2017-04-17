@@ -1,4 +1,4 @@
-package com.nanairosoft.android.nanairotter;
+package com.nanairosoft.android.nanatta;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,6 +12,13 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+import twitter4j.auth.AccessToken;
+import twitter4j.Status;
+import twitter4j.Twitter;
+import twitter4j.TwitterException;
+import twitter4j.TwitterFactory;
+import twitter4j.User;
 
 public class MainActivity extends AppCompatActivity
 	implements NavigationView.OnNavigationItemSelectedListener {
@@ -19,7 +26,7 @@ public class MainActivity extends AppCompatActivity
 	static String TAG = "MainActivity";
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
+    protected void onCreate(Bundle savedInstanceState) 
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);

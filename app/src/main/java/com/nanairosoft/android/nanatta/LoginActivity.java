@@ -1,4 +1,4 @@
-package com.nanairosoft.android.nanairotter;
+package com.nanairosoft.android.nanatta;
 
 import twitter4j.Twitter;
 import twitter4j.TwitterException;
@@ -10,6 +10,7 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.Toast;
 
 public class LoginActivity extends Activity
@@ -21,11 +22,14 @@ public class LoginActivity extends Activity
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+		
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		
         setContentView(R.layout.login);
-
+        
         mCallbackURL = getString(R.string.twitter_callback_url);
         mTwitter = TwitterUtils.getTwitterInstance(this);
-		mTwitter.setOAuthAccessToken(null);
+		//mTwitter.setOAuthAccessToken(null);
 
         findViewById(R.id.action_start_oauth).setOnClickListener(new View.OnClickListener() {
 				@Override
